@@ -1,0 +1,21 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/core-ajax/core-ajax.html">
+
+<polymer-element name="hello-element" attributes="">
+  <template>
+    <link rel="stylesheet" href="hello-element.css">
+    <span>I'm <b>hello-element</b>. This is my Shadow DOM.</span>
+    <core-ajax id="HelloResponse" url="../../data/hello.json" auto response="{{response}}"></core-ajax>
+    <textarea name="" value="{{response.HelloElement.name}}" id="" cols="30" rows="10"></textarea>
+  </template>
+  <script>
+    (function () {
+
+      Polymer({
+        // define element prototype here
+          
+      });
+
+    })();
+  </script>
+</polymer-element>
